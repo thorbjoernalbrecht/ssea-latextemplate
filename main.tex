@@ -1,0 +1,198 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage{afterpage}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{xcolor}
+\definecolor{sseablue}{HTML}{0070c0}
+
+\usepackage{sectsty}
+\sectionfont{\fontsize{10pt}{12pt}\selectfont} % 12pt font size, 14pt line spacing
+\subsectionfont{\normalfont\itshape\fontsize{10pt}{12pt}\selectfont}
+\subsubsectionfont{\normalfont\itshape\fontsize{10pt}{12pt}\selectfont}
+
+\usepackage{titlesec}
+\titleformat{\section}
+    {\normalfont\bfseries}{\thesection.}{0.5em}{}
+\titleformat{\subsection}
+    {\normalfont\itshape}{\thesubsection.}{0.5em}{}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textcolor{sseablue}{\small 5$^{\text{th}}$ Symposium on Space Educational Activities\\ Munich, April 2026}}
+\renewcommand{\headrule}{\color{sseablue}\hrule width \textwidth height 0.4pt}
+\fancyhead[R]{\includegraphics[width=0.07\textwidth]{ssea_munich.png}}
+\setlength{\headsep}{1.2cm}
+
+\fancyfoot[L]{\textcolor{sseablue}{DOI:...}}
+\fancyfoot[R]{\textcolor{sseablue}{Page \thepage\ of 3}}
+\renewcommand{\footrule}{\color{sseablue}\hrule width \textwidth height 0.4pt}
+
+\begin{document}
+
+\begin{center}
+    \vspace*{1cm}
+    \LARGE \textbf{Title of your Paper}\\[1em]
+    \large \textit{Name Surname$^1$, Name Surname$^2$, Name Surname$^3$}
+\end{center}
+
+\vspace{1em}
+\noindent\rule{\textwidth}{0.4pt}
+
+{
+\fontsize{12pt}{14pt}\selectfont
+
+\section*{Abstract}
+\addcontentsline{toc}{section}{Abstract}
+
+Provide a concise Abstract of your paper, with about 400 words maximum. It should include the goal(s) of the research, and summarize the results and conclusions. Do not use any abbreviations or references for the abstract! Abstract text shall be in Arial, size 12. Note that the first page of the paper only includes the Title of your Paper, the authors list, the Abstract, and the Keywords. This page will be available online during the congress to give the attendees an idea of the content of your oral presentation.
+
+\section*{Keywords}
+\addcontentsline{toc}{section}{Keywords}
+
+Keyword 1, Keyword 2, Keyword 3
+
+} %close fontsize
+
+\vspace*{\fill}
+\noindent\rule{0.35\textwidth}{0.4pt}
+
+\vspace{1em}
+\noindent
+$^1$ Corresponding author: Institution, Country, Email\\
+$^2$ Institution, Country\\
+$^3$ Institution, Country
+
+\newpage
+
+\begin{multicols}{2}
+
+\section*{Nomenclature}
+If you are using mathematical symbols, please describe them here as follows:
+
+\begin{tabbing}
+A \hspace{2cm} \= Area \\
+r \> Radius \\
+\end{tabbing}
+
+Nomenclature is only defined in this section; you do not need to define them in the text again.
+
+If you are not using any mathematical symbol, just delete this section.
+
+\section*{Acronyms/Abbreviations}
+All used acronyms and abbreviations should be listed in here as follows:
+
+\begin{tabbing}
+SSEA \= Symposium on Space Educational Activities \\
+\end{tabbing}
+
+In the text, they should be defined the first time they are used as follows "The Symposium on Space Educational Activities (SSEA)...".
+
+\section{Introduction}
+This template provides you the right format for the paper for the Symposium on Space Educational Activities (SSEA) 2026. Please use this document (deleting the instructions) to write your paper, and do not make changes in the format. At the end we will ask you to provide a word file and a pdf of your paper.
+
+If you have any question, please contact us at \href{mailto:info@ssea.space}{info@ssea.space}.
+
+\section{Paper Structure}
+The paper should have a maximum length of 6 pages, including: Abstract, Appendix (if needed) and References.
+
+The main text shall be in Arial, size 10.
+
+Section headings are numbered (except for Abstract, Keywords, Nomenclature, Acronyms/Abbreviations, Acknowledgements, Appendix and References).
+
+All section headings are bold (use format provided in the template as "Title 3").
+
+You are free to choose the structure of your paper, but some sections should be present: Introduction, Discussion and Conclusions. Between Introduction and Discussion feel free to include the sections you see more suitable, for example, State-of-the-art, Methodology, Results, etc.
+
+\subsection{Subsections}
+You can divide the sections in subsections like this. Subsection headings are in italics (use format provided in the template as "Title 4").
+
+\subsubsection{Sub-subsections}
+You can divide your subsections in sub-subsections like this. Sub-subsection headings are in italic (use format provided in the template as "Title 5").
+
+\section{How to properly use...}
+This section shows you how to properly use Figures, Tables and Equations.
+
+\subsection{Figures}
+Figures in need to be numbered and cited in the text. For each figure, provide a short description (and reference if required). You have a good example on how to do it in Figure 1. When required (if the figure needs to be bigger for proper reading), you can put a figure across the columns, at the end of the paper.
+
+\begin{center}
+    \includegraphics[width=0.35\textwidth]{ssea_munich.png}\\
+    \textbf{Figure 1. $5^{\text{th}}$ SSEA Logo [1]}
+\end{center}
+
+\subsection{Tables}
+As with Figures, Tables need to be numbered and cited in the text. For each table, provide a short description (and reference if required). You have a good example on how to do it in Table 1.
+
+\begin{center}
+    \textbf{Table 1. Table with previous SSEA [1]}
+    \vspace{0.5em}
+    
+    \begin{tabular}{|c|c|c|}
+        \hline
+        & Year & Location \\
+        \hline
+        1$^{\text{st}}$ & 2015 & Padova \\
+        2$^{\text{nd}}$ & 2018 & Budapest \\
+        3$^{\text{rd}}$ & 2019 & Leicester \\
+        4$^{\text{th}}$ & 2012 & Barcelona \\
+        \hline
+    \end{tabular}
+\end{center}
+
+\newpage
+
+Note that the number and description go above the table, not below!
+
+Tables must be kept together on the same page.
+
+Same as with figures, big tables can take over two columns, and be placed at the end of the document.
+
+Figures and Tables description shall be in Arial Bold, size 9 (use format provided in the template as "Figure\&Table").
+
+\subsection{Equations}
+If you include any equations, they need to be in a separate line, numbered and referenced in the text as for example, Eq. 1.
+
+\begin{equation}
+A = \pi r^2 \tag{1}
+\end{equation}
+
+Use Word Math Editor to write your equations.
+
+\section{Results}
+If necessary, include the results section in your paper, where you present the results.
+
+\section{Discussion}
+You might combine Results and Discussion sections, if it feels more appropriate for your paper.
+
+\section{Conclusions}
+Present the main conclusions of your paper here. No new results or citations should be presented in this part. Provide as well, if it applies, the next potential steps in this field.
+
+\section*{Acknowledgements}
+Do not forget to acknowledge those who helped and/or funded your research.
+
+\section*{Appendix}
+It is possible to add an appendix for some additional information. However, remember that this counts for the maximum pages allowed for your paper. If there is more than one Appendix, use Appendix A, Appendix B, etc.
+
+\section*{References}
+Here you have some examples of references.
+
+\begin{enumerate}
+    \item SSEA22 Website: \url{https://ssea.space/}, last visited: 14th December 2026.
+    \item N. Surname, N. Surname, Title of the paper, \textit{Title of the Journal}, Number and pages, Year.
+    \item N. Surname, N. Surname, Title of the paper, \textit{Title of the Congress}, Location, Year.
+    \item N. Surname, N. Surname, N. Surname, Title of the Book, Publisher, Year.
+    \item N. Surname / Entity: website, last visited: date.
+\end{enumerate}
+
+You should cite all references listed here in your text, putting the number in square brackets [2].
+
+\end{multicols}
+
+\end{document}
